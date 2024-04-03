@@ -4,7 +4,12 @@ public class StringOperations
 {
     public string Reverse(string str) 
     {
-        return str;
+        string reverseStr = string.Empty;
+        for (int i = str.Length - 1; i >=0; i--) 
+        {
+            reverseStr += str[i];
+        }
+        return reverseStr;
     }
 
     public bool AreAnagrams(string str1, string str2)
