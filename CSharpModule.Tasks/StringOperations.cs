@@ -14,6 +14,11 @@ public class StringOperations
 
     public bool AreAnagrams(string str1, string str2)
     {
+        if (string.Concat(str1.OrderBy(c => c)) == string.Concat(str2.OrderBy(c => c))) 
+        {
+            return true;
+        } 
+        
         return false;
     }
 
@@ -41,5 +46,4 @@ public class StringOperations
     {
         return str;
     }
-
 }
